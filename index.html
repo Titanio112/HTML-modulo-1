@@ -1,62 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
+
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
     <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são
+        sugestões.</p>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#web">História da Web</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#html">HTML o que é?</a></li>
+        <li><a href="#como-funciona">Como funciona o <i>HTML</i>?</a></li>
+        <li><a href="#estrutura básica">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#diferença-listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#Links de referências">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="web">História da Web</h2>
+    <p>A história da <strong>Internet</strong> está diretamente ligada à evolução da <strong>tecnologia</strong> como um
+        todo. Desde o surgimento dos primeiros computadores, como o <i>Harvard Mark I</i>, o <i>Colossus</i> e o
+        <i>ENIAC</i>, que eram máquinas enormes e funcionavam com válvulas, até os computadores atuais, ultrafinos e
+        portáteis, equipados com uma quantidade enorme de chips de circuitos integrados.
+    </p>
+    <p>A <strong>Internet</strong> surgiu inicialmente para possibilitar a <u>comunicação entre universidades</u>, e
+        posteriormente foi utilizada no <u>ambiente militar</u>. Logo, percebeu-se que ela poderia ser amplamente
+        utilizada e foi difundida em <u>todas as áreas de atuação</u>.</p>
+    <p><small><a href="#inicio">(Voltar)</a></small></p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <p><i>Cliente</i> é o termo utilizado para se referir ao lado do usuário em uma aplicação ou programa, que recebe os
+        dados do servidor para utilizá-los em sua máquina local.</p>
+    <p><i>Navegadores</i> são programas usados para a interpretação das páginas <i>HTML</i> recebidas do servidor. Há
+        uma grande variedade de navegadores, também conhecidos como <u>"browsers"</u>, porém a interpretação do arquivo
+        pode variar de um para o outro dependendo da tecnologia utilizada.</p>
+    <p><i>Aplicações Web</i> são soluções que utilizam a <strong>internet</strong> como meio de comunicação, não sendo
+        necessária a instalação de qualquer programa específico para sua utilização.</p>
+    <p><i>Dispositivos móveis</i> são equipamentos que podem se conectar à <strong>internet</strong> e serem usados de
+        <u>praticamente qualquer lugar</u>, como, por exemplo, <i>laptops</i>, <i>tablets</i>, <i>smartwatches</i> e
+        <i>smartphones</i>.
+    </p>
+    <p><small><a href="#inicio">(Voltar)</a></small></p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="servers">O que são <i>Servidores</i>?</h2>
+    <p><i>Servidores</i> são computadores com maior potência e desempenho, que são utilizados para receber solicitações
+        ou executar aplicações requisitadas pelos <i>Clients</i> (usuários).</p>
+    <p>Existem diversos tipos de servidores, e alguns exemplos foram apresentados:</p>
+    <dl>
+        <dt><strong>Servidor de Arquivos</strong></dt>
+        <dd>É um servidor onde é possível armazenar arquivos, e um exemplo comum é o <a href="https://drive.google.com/"
+                target="_blank">Google Drive</a>.</dd>
+        <dt><strong>Servidor Firewall (Segurança)</strong></dt>
+        <dd>É um servidor utilizado para configurar as especificações de segurança de uma rede, determinando as
+            possibilidades de entrada e saída de pacotes de dados na mesma.</dd>
+        <dt><strong>Servidor de Streaming</strong></dt>
+        <dd>É um servidor onde as aplicações de <i>Streaming</i> são executadas, e um exemplo conhecido é o <a
+                href="https://www.netflix.com/" target="_blank">Netflix</a>.</dd>
+        <dt><strong>Servidor de E-mail</strong></dt>
+        <dd>É um servidor utilizado para armazenar os <i>e-mails</i> enviados e recebidos de um domínio ou rede
+            específica. Exemplos populares incluem o <a href="https://outlook.office.com/mail/"
+                target="_blank">Outlook</a>, amplamente utilizado, e o <a href="https://mail.google.com/mail/"
+                target="_blank">Gmail</a> da Google.</dd>
+        <dt><strong>Servidor Web</strong></dt>
+        <dd>É um servidor onde as páginas da Web são armazenadas, contendo todos os arquivos que fazem parte delas, como
+            os arquivos HTML, CSS e JavaScript.</dd>
+    </dl>
+    <p><small><a href="#inicio">(Voltar)</a></small></p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="html">O que é HTML</h2>
+    <p>O HTML, sigla em inglês para "Linguagem de Marcação de Hipertexto", foi criado pelo britânico Tim Berners-Lee.
+        Essa linguagem é o componente básico da web e permite inserir conteúdo e estabelecer a estrutura básica de um
+        site.
+        Em outras palavras, o HTML serve para dar significado e organizar as informações em uma página da web.
+        Sem ele, os navegadores não saberiam como exibir textos como elementos ou carregar imagens e outros conteúdos.
+    </p>
+    <small><a href="#inicio">(Voltar)</a></small>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="como-funciona">Como funciona o HTML?</h2>
+    <p>Quando um arquivo HTML é carregado em um navegador, o navegador faz a leitura do arquivo e exibe o seu conteúdo
+        para o usuário final. Esse arquivo pode ser visualizado em qualquer navegador, como Google Chrome, Edge ou
+        Mozilla Firefox. Um site geralmente é composto por várias páginas HTML. Por exemplo, um site com três páginas
+        (uma
+        página inicial, uma página de contato e uma página de produtos) terá pelo menos três arquivos HTML distintos, um
+        para cada página do site.</p>
+    <p>Lembre-se de adicionar um link para voltar ao índice, usando âncoras, por exemplo.</p>
+    <small><a href="#inicio">(Voltar)</a></small>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+    <h2 id="tags">O que são <i>Tags</i>?</h2>
+    <p><strong><u>Tags: </u> </strong>As tags são códigos que definem toda a estrutura da página, como o tamanho do
+        texto, a fonte da letra, as cores, quebras de linha e outras configurações. A maioria dos elementos do documento
+        HTML são compostos por uma estrutura de abertura e uma de fechamento, como por exemplo <tag> e </tag>. Existem
+        também tags de estrutura única, como a tag <br /> que realiza uma quebra de linha.</p>
+
+    <p>Para criar um parágrafo, utilizamos a tag <strong>&lt;p&gt;</strong>, escrevemos o conteúdo do parágrafo e em
+        seguida fechamos a tag com <strong>&lt;/p&gt;</strong>:</p>
+    <pre>&lt;p&gt;Este é um exemplo de parágrafo.&lt;/p&gt;</pre>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="estrutura básica">Como é uma estrutura básica de um HTML ?</h2>
+
+    <p>O documento começa com uma declaração do tipo de documento, que, no caso do HTML5, pode ser declarado com a tag
+        <strong>&lt;!DOCTYPE html&gt;</strong>. Em seguida, iniciamos nosso documento com a tag
+        <strong>&lt;html&gt;</strong>, que deve ser fechada no final do documento com a tag
+        <strong>&lt;/html&gt;</strong>. Depois, o documento deve ter um elemento <strong>&lt;head&gt;</strong>, que
+        receberá todas as informações básicas da página, como o título, links para elementos externos, metadados, etc. É
+        aqui que definimos o título da página com a tag <strong>&lt;title&gt;</strong>. Finalmente, abrimos a tag
+        <strong>&lt;body&gt;</strong>, que representa o corpo do nosso documento, onde ficarão todos os elementos que
+        serão renderizados na tela do navegador. Desta forma, temos a estrutura básica do nosso documento HTML:
+    </p>
+    <pre>&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;&lt;/title&gt;
+            &lt;/head&gt;
+        &lt;body&gt;
+        
+        &lt;/body&gt;
+   </html></pre>
+
+    <p>Para evitar erros de renderização ou incompatibilidade de caracteres, também devemos declarar o padrão de
+        codificação. No Brasil e em grande parte da América Latina, usamos o padrão <strong>UTF-8</strong>. Para fazer
+        isso, usamos a tag de metadados <strong>&lt;meta/&gt;</strong> e declaramos no atributo charset que nosso padrão
+        é
+        o UTF-8. Assim, temos a estrutura básica do nosso documento HTML:</p>
+        <pre>&lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;&lt;/title&gt;
+                    &lt;meta charset="utf-8"/&gt;
+                &lt;/head&gt;
+            </html></pre>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="diferença-listas">Compreendendo a distinção entre listas ordenadas e não ordenadas</h2>
+    <p><strong><u>INSTRUÇÕES:</u> </strong> A diferença principal entre uma lista ordenada e uma lista não ordenada é a
+        forma como cada item é apresentado - a lista ordenada enumera os elementos, enquanto a lista não ordenada insere
+        marcadores antes de cada elemento.
+
+    <h2 id="Links de referências">Links de referências</h2>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Adicione links para outras páginas que tratem desses assuntos. Lembre-se de
+        que é necessário configurar o link para abrir em uma nova aba/janela do navegador.</p>
+    <li><a href="#">https://www.homehost.com.br/blog/tutoriais/o-que-e-html/</a></li>
     </ul>
+
+    <small><a href="#inicio">(Voltar)</a></small>
 
 </body>
+
 </html>
